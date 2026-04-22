@@ -22,4 +22,9 @@ class Travel extends Model
     {
         return $this->hasMany(Gallery::class);
     }
+
+    public function __toString(): string
+    {
+        return $this->title;
+    }
 }
