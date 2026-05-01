@@ -1,0 +1,253 @@
+[
+  {
+    "name": "Bruxelles",
+    "coordinates": [
+      4.3517,
+      50.8503
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#belgium"
+  },
+  {
+    "name": "Paris",
+    "coordinates": [
+      2.3522,
+      48.8566
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#france"
+  },
+  {
+    "name": "Strasbourg",
+    "coordinates": [
+      7.7521,
+      48.5734
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#france"
+  },
+  {
+    "name": "Dornach",
+    "coordinates": [
+      7.6189,
+      47.4828
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#dornach"
+  },
+  {
+    "name": "Basel",
+    "coordinates": [
+      7.5886,
+      47.5596
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#switzerland"
+  },
+  {
+    "name": "Zürich",
+    "coordinates": [
+      8.5417,
+      47.3769
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#zurich"
+  },
+  {
+    "name": "Salzburg",
+    "coordinates": [
+      13.055,
+      47.8095
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#austria"
+  },
+  {
+    "name": "Vienna",
+    "coordinates": [
+      16.3738,
+      48.2082
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#austria"
+  },
+  {
+    "name": "Rome",
+    "coordinates": [
+      12.4964,
+      41.9028
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#rome"
+  },
+  {
+    "name": "Vatican City",
+    "coordinates": [
+      12.4534,
+      41.9029
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#vatican-city"
+  },
+  {
+    "name": "Pisa",
+    "coordinates": [
+      10.4,
+      43.7167
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#pisa"
+  },
+  {
+    "name": "Florence",
+    "coordinates": [
+      11.2558,
+      43.7696
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#firenze"
+  },
+  {
+    "name": "Maranello",
+    "coordinates": [
+      10.8644,
+      44.531
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#maranello"
+  },
+  {
+    "name": "Venice",
+    "coordinates": [
+      12.3155,
+      45.4408
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#venice"
+  },
+  {
+    "name": "Belgrade",
+    "coordinates": [
+      20.4489,
+      44.7866
+    ],
+    "annotation": [-60, -30, -4]
+  },
+  {
+    "name": "Rila",
+    "coordinates": [
+      23.3219,
+      42.6977
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#bulgaria"
+  },
+  {
+    "name": "Athens",
+    "coordinates": [
+      23.7275,
+      37.9838
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#greece"
+  },
+  {
+    "name": "Istanbul",
+    "coordinates": [
+      28.9784,
+      41.0082
+    ],
+    "annotation": [30, -24, 34],
+    "link": "europe#istanbul"
+  },
+  {
+    "name": "Bucharest",
+    "coordinates": [
+      26.1025,
+      44.4268
+    ],
+    "annotation": [30, -10, 43],
+    "link": "europe#bucharest"
+  },
+  {
+    "name": "Budapest",
+    "coordinates": [
+      19.0402,
+      47.4979
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#budapest"
+  },
+  {
+    "name": "Bratislava",
+    "coordinates": [
+      17.1077,
+      48.1486
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#bratislava"
+  },
+  {
+    "name": "Prague",
+    "coordinates": [
+      14.4378,
+      50.0755
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#praha"
+  },
+  {
+    "name": "Frankfurt",
+    "coordinates": [
+      8.6821,
+      50.1109
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#frankfurt"
+  },
+  {
+    "name": "Cologne",
+    "coordinates": [
+      6.9603,
+      50.9375
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#cologne"
+  },
+  {
+    "name": "Luxembourg",
+    "coordinates": [
+      6.1319,
+      49.6117
+    ],
+    "annotation": [-60, -30, -4],
+    "link": "europe#luxembourg"
+  },
+  {
+    "name": "Warsaw",
+    "coordinates": [
+      21.0122,
+      52.2297
+    ],
+    "annotation": [20, -30, 33],
+    "link": "europe#warsaw"
+  },
+  {
+    "name": "Krakow",
+    "coordinates": [
+      19.945,
+      50.0647
+    ],
+    "annotation": [30, -20, 33],
+    "link": "europe#krakow"
+  },
+  {
+    "name": "Auschwitz",
+    "coordinates": [
+      19.1784,
+      50.0359
+    ],
+    "annotation": [35, -32, 41],
+    "link": "europe#auschwitz"
+  }
+]

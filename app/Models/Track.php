@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use getID3;
 use getid3_lib;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -26,17 +27,6 @@ class Track extends Model
         'is_published',
         'published_at',
     ];
-
-    protected static function booted(): void
-    {
-        static::saved(function (Track $track): void {
-            if (! $track->wasChanged('file')) {
-                return;
-            }
-
-            $track->extractMetadataAndUpdateFields();
-        });
-    }
 
     protected $appends = ['url'];
 
@@ -71,10 +61,15 @@ class Track extends Model
 
         $newTitle = $this->firstTagValue($tags, ['title']) ?: $this->title;
 
+        $duration = isset($info['playtime_seconds'])
+            ? (int) round($info['playtime_seconds'])
+            : 1;
+
         $this->forceFill([
             'title' => $newTitle,
             'slug' => $newTitle ? Str::slug($newTitle) : $this->slug,
             'track_number' => $this->firstTagValue($tags, ['track_number', 'track']),
+            'duration' => $duration,
             'bpm' => $this->firstTagValue($tags, ['bpm', 'tempo', 'tbpm']),
             'artist' => $this->firstTagValue($tags, ['artist']),
             'album' => $this->firstTagValue($tags, ['album']),

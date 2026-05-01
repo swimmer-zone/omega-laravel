@@ -44,7 +44,8 @@ class GalleryResource extends Resource
                 )
                 ->searchable()
                 ->preload()
-                ->required(),
+                ->required()
+                ->columnSpanFull(),
 
             TextInput::make('title')
                 ->required()

@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Phuket",
+        "coordinates": [
+            98.3923,
+            7.8804
+        ],
+        "annotation": [-40, -25, -4],
+        "link": "thailand#phuket"
+    },
+    {
+        "name": "Koh Racha Yai",
+        "coordinates": [
+            98.3666,
+            7.6098
+        ],
+        "annotation": [-37, -15, -4]
+    },
+    {
+        "name": "Chiang Mai",
+        "coordinates": [
+            98.9853,
+            18.7883
+        ],
+        "annotation": [-30, -10, -4],
+        "link": "thailand#chiang-mai"
+    },
+    {
+        "name": "Pai",
+        "coordinates": [
+            98.4365,
+            19.3589
+        ],
+        "annotation": [-30, -20, -4],
+        "link": "thailand#pai"
+    },
+    {
+        "name": "Bangkok",
+        "coordinates": [
+            100.5018,
+            13.7563
+        ],
+        "annotation": [-40, -15, -4],
+        "link": "thailand#bangkok"
+    },
+    {
+        "name": "Pattaya",
+        "coordinates": [
+            100.8825,
+            12.9236
+        ],
+        "annotation": [-40, -8, -4],
+        "link": "thailand#pattaya"
+    }
+]

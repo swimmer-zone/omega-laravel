@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Berlin",
+        "coordinates": [
+            13.405,
+            52.52
+        ],
+        "annotation": [0, -5, 10]
+    },
+    {
+        "name": "Amsterdam",
+        "coordinates": [
+            4.9041,
+            52.3676
+        ],
+        "annotation": [2, -28, 38]
+    },
+    {
+        "name": "Malaga",
+        "coordinates": [
+            -4.4214,
+            36.7213
+        ],
+        "annotation": [-10, 30, -4]
+    }
+]

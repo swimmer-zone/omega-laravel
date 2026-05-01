@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Milan",
+        "coordinates": [
+            9.19,
+            45.4642
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#milan"
+    },
+    {
+        "name": "Brindisi",
+        "coordinates": [
+            17.9465,
+            40.6389
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#brindisi"
+    },
+    {
+        "name": "Lecce",
+        "coordinates": [
+            18.1743,
+            40.352
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#lecce"
+    },
+    {
+        "name": "Taranto",
+        "coordinates": [
+            17.247,
+            40.4644
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#taranto"
+    },
+    {
+        "name": "Lamezia Terme",
+        "coordinates": [
+            16.3094,
+            38.963
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#lamezia-terme"
+    },
+    {
+        "name": "Bologna",
+        "coordinates": [
+            11.3426,
+            44.4949
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#bologna"
+    },
+    {
+        "name": "Rimini",
+        "coordinates": [
+            12.5653,
+            44.06
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#rimini"
+    },
+    {
+        "name": "San Marino",
+        "coordinates": [
+            12.45,
+            43.9333
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#san-marino"
+    },
+    {
+        "name": "Parma",
+        "coordinates": [
+            10.3279,
+            44.8015
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#parma"
+    },
+    {
+        "name": "Modena",
+        "coordinates": [
+            10.9252,
+            44.6471
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#modena"
+    },
+    {
+        "name": "Oleggio",
+        "coordinates": [
+            8.644,
+            45.537
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "italy#oleggio"
+    }
+]

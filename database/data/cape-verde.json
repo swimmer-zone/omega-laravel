@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Praia",
+        "coordinates": [
+            -23.5133,
+            14.9331
+        ],
+        "annotation": [20, 20, 20],
+        "link": "cape-verde#praia"
+    },
+    {
+        "name": "Cidade Velha",
+        "coordinates": [
+            -23.6167,
+            14.9167
+        ],
+        "annotation": [20, 10, 46],
+        "link": "cape-verde#cidade-velha"
+    },
+    {
+        "name": "Tarrafal",
+        "coordinates": [
+            -23.7542,
+            15.2781
+        ],
+        "annotation": [20, -10, 27],
+        "link": "cape-verde#tarrafal"
+    },
+    {
+        "name": "Assomada",
+        "coordinates": [
+            -23.6833,
+            15.1
+        ],
+        "annotation": [20, 0, 37],
+        "link": "cape-verde#assomada"
+    },
+    {
+        "name": "Lisbon",
+        "coordinates": [
+            -9.1399,
+            38.7169
+        ],
+        "annotation": [-30, 30, -4],
+        "link": "cape-verde#lisbon"
+    },
+    {
+        "name": "Sintra",
+        "coordinates": [
+            -9.3817,
+            38.8029
+        ],
+        "annotation": [-30, 10, -4],
+        "link": "cape-verde#sintra"
+    },
+    {
+        "name": "Cascais",
+        "coordinates": [
+            -9.4215,
+            38.6979
+        ],
+        "annotation": [-30, 20, -4],
+        "link": "cape-verde#cascais"
+    }
+]

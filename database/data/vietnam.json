@@ -1,0 +1,109 @@
+[
+    {
+        "name": "Hanoi",
+        "coordinates": [
+            105.8544,
+            21.0285
+        ],
+        "annotation": [15, -38, 21],
+        "link": "vietnam#hanoi"
+    },
+    {
+        "name": "Ho Chi Minh",
+        "coordinates": [
+            106.7009,
+            10.7769
+        ],
+        "annotation": [13, 24, 41],
+        "link": "vietnam#ho-chi-minh"
+    },
+    {
+        "name": "Nha Thrang",
+        "coordinates": [
+            109.1967,
+            12.2388
+        ],
+        "annotation": [13, 20, 41],
+        "link": "vietnam#nha-trang"
+    },
+    {
+        "name": "Da Nang",
+        "coordinates": [
+            108.2068,
+            16.0471
+        ],
+        "annotation": [22, 20, 33],
+        "link": "vietnam#da-nang-and-hoi-an"
+    },
+    {
+        "name": "Hue",
+        "coordinates": [
+            107.5909,
+            16.4637
+        ],
+        "annotation": [-60, -20, -4],
+        "link": "vietnam#hue"
+    },
+    {
+        "name": "Phong Nha",
+        "coordinates": [
+            106.2872,
+            17.5558
+        ],
+        "annotation": [20, -6, 40],
+        "link": "vietnam#phong-nha"
+    },
+    {
+        "name": "Ha Long Bay",
+        "coordinates": [
+            107.1839,
+            20.9101
+        ],
+        "annotation": [16, -21, 44],
+        "link": "vietnam#ha-long-bay"
+    },
+    {
+        "name": "Ha Giang",
+        "coordinates": [
+            104.9836,
+            22.8233
+        ],
+        "annotation": [20, -50, 32],
+        "link": "vietnam#ha-giang"
+    },
+    {
+        "name": "Taipei",
+        "coordinates": [
+            121.5654,
+            25.033
+        ],
+        "annotation": [-30, -10, -4]
+    },
+    {
+        "name": "Hoi An",
+        "coordinates": [
+            108.338,
+            15.8801
+        ],
+        "annotation": [16, 8, 22],
+        "link": "vietnam#da-nang-and-hoi-an"
+    },
+    {
+        "name": "Dong Hoi",
+        "coordinates": [
+            106.6223,
+            17.4689
+        ],
+        "annotation": [12, -15, 32],
+        "link": "vietnam#dong-hoi"
+    },
+    {
+        "name": "Ninh Binh",
+        "coordinates": [
+            105.9745,
+            20.2539
+        ],
+        "annotation": [20, -14, 34],
+        "link": "vietnam#ninh-binh"
+    }
+]

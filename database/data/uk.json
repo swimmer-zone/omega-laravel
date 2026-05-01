@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Edinburgh",
+        "coordinates": [
+            -3.1883,
+            55.9533
+        ],
+        "annotation": [-20, -30, -4],
+        "link": "uk#edinburgh"
+    },
+    {
+        "name": "Liverpool",
+        "coordinates": [
+            -2.9916,
+            53.4084
+        ],
+        "annotation": [-40, -3, -4],
+        "link": "uk#liverpool"
+    },
+    {
+        "name": "Manchester",
+        "coordinates": [
+            -2.2426,
+            53.4808
+        ],
+        "annotation": [-40, 7, -4],
+        "link": "uk#manchester"
+    },
+    {
+        "name": "Chester",
+        "coordinates": [
+            -2.8919,
+            53.1905
+        ],
+        "annotation": [-44, 28, -4],
+        "link": "uk#chester"
+    },
+    {
+        "name": "Llandudno",
+        "coordinates": [
+            -3.8315,
+            53.324
+        ],
+        "annotation": [-40, 1, -4],
+        "link": "uk#llandudno"
+    },
+    {
+        "name": "London",
+        "coordinates": [
+            -0.1278,
+            51.5074
+        ],
+        "annotation": [-50, 24, -4],
+        "link": "uk#london"
+    }
+]

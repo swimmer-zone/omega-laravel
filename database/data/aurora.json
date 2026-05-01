@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Dublin",
+        "coordinates": [
+            -6.2603,
+            53.3498
+        ],
+        "annotation": [-20, -7, -4],
+        "link": "aurora#dublin"
+    },
+    {
+        "name": "Rovaniemi",
+        "coordinates": [
+            25.7294,
+            66.5039
+        ],
+        "annotation": [20, 10, 38],
+        "link": "aurora#rovaniemi"
+    },
+    {
+        "name": "Belfast",
+        "coordinates": [
+            -5.9301,
+            54.5973
+        ],
+        "annotation": [-20, -12, -4],
+        "link": "aurora#belfast"
+    }
+]

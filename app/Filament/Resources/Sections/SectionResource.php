@@ -48,7 +48,8 @@ class SectionResource extends Resource
                 ->unique(ignoreRecord: true)
                 ->maxLength(255),
 
-            Textarea::make('description'),
+            Textarea::make('description')
+                ->columnSpanFull(),
         ]);
     }
 

@@ -17,6 +17,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Resources\Resource;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
@@ -38,47 +39,79 @@ class TrackResource extends Resource
     public static function form(Schema $schema): Schema
     {
         return $schema->components([
-            Select::make('section_id')
-                ->relationship('section', 'title')
-                ->getOptionLabelFromRecordUsing(
-                    fn ($record) => $record->title
-                )
-                ->searchable()
-                ->preload()
-                ->required(),
+            Section::make('Track')
+                ->schema([
+                    Select::make('section_id')
+                        ->relationship('section', 'title')
+                        ->getOptionLabelFromRecordUsing(
+                            fn ($record) => $record->title
+                        )
+                        ->searchable()
+                        ->preload()
+                        ->required(),
 
-            TextInput::make('title')
-                ->required()
-                ->live(onBlur: true)
-                ->afterStateUpdated(fn ($set, $state) => $set('slug', Str::slug($state))),
+                    TextInput::make('title')
+                        ->required()
+                        ->live(onBlur: true)
+                        ->afterStateUpdated(fn ($set, $state) => $set('slug', Str::slug($state)))
+                        ->maxLength(255),
 
-            TextInput::make('slug')
-                ->required()
-                ->unique(ignoreRecord: true),
+                    TextInput::make('slug')
+                        ->required()
+                        ->unique(ignoreRecord: true)
+                        ->maxLength(255),
 
-            FileUpload::make('file')
-                ->label('MP3 file')
-                ->disk('public')
-                ->directory('tracks')
-                ->acceptedFileTypes(['audio/mpeg', 'audio/mp3'])
-                ->maxSize(204800) // 200MB
-                ->required(),
+                    FileUpload::make('file')
+                        ->label('MP3 file')
+                        ->disk('public')
+                        ->directory('tracks')
+                        ->acceptedFileTypes(['audio/mpeg', 'audio/mp3'])
+                        ->maxSize(204800) // 200MB
+                        ->required(),
+                ])
+                ->columns(1),
 
-            Placeholder::make('audio_preview')
-                ->content(fn ($get) => view('filament.audio-preview', [
-                    'file' => $get('file'),
-                ]))
-                ->visible(fn ($get) => $get('file')),
+            Section::make('MP3 metadata')
+                ->schema([
+                    TextInput::make('artist')
+                        ->readOnly()
+                        ->dehydrated(false),
 
-            TextInput::make('duration')
-                ->numeric()
-                ->label('Duration (seconds)')
-                ->required(),
+                    TextInput::make('album')
+                        ->readOnly()
+                        ->dehydrated(false),
 
-            TextInput::make('bpm')
-                ->numeric()
-                ->label('BPM')
-                ->nullable(),
+                    TextInput::make('genre')
+                        ->readOnly()
+                        ->dehydrated(false),
+
+                    TextInput::make('year')
+                        ->readOnly()
+                        ->dehydrated(false),
+
+                    TextInput::make('track_number')
+                        ->label('Track #')
+                        ->readOnly()
+                        ->dehydrated(false),
+
+                    TextInput::make('duration')
+                        ->label('Duration (seconds)')
+                        ->numeric()
+                        ->required()
+                        ->default(1),
+
+                    TextInput::make('bpm')
+                        ->readOnly()
+                        ->dehydrated(false),
+
+                    Textarea::make('comment')
+                        ->readOnly()
+                        ->dehydrated(false)
+                        ->rows(3)
+                        ->columnSpanFull(),
+                ])
+                ->columns(1)
+                ->collapsed(),
         ]);
     }
 
@@ -92,7 +125,8 @@ class TrackResource extends Resource
                 TextColumn::make('slug')
                     ->searchable(),
 
-                TextColumn::make('duration'),
+                TextColumn::make('duration')
+                    ->formatStateUsing(fn ($state) => gmdate('i:s', $state)),
 
                 TextColumn::make('bpm'),
             ])

@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Reykjavik",
+        "coordinates": [
+            -21.9426,
+            64.1466
+        ],
+        "annotation": [-16, -10, -4],
+        "link": "iceland"
+    }
+]

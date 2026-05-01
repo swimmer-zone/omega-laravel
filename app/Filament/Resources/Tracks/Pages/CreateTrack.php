@@ -8,4 +8,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateTrack extends CreateRecord
 {
     protected static string $resource = TrackResource::class;
+
+    protected function afterCreate(): void
+    {
+        $this->record->extractMetadataAndUpdateFields();
+    }
 }

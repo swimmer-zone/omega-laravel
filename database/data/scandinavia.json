@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Oslo",
+        "coordinates": [
+            10.7522,
+            59.9139
+        ],
+        "annotation": [-30, -30, -4]
+    },
+    {
+        "name": "Copenhagen",
+        "coordinates": [
+            12.5683,
+            55.6761
+        ],
+        "annotation": [32, 13, 45]
+    },
+    {
+        "name": "Randers",
+        "coordinates": [
+            10.0364,
+            56.4607
+        ],
+        "annotation": [35, 10, 30]
+    },
+    {
+        "name": "Billund",
+        "coordinates": [
+            9.1153,
+            55.7308
+        ],
+        "annotation": [45, 29, 24]
+    }
+]

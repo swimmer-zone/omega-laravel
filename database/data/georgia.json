@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Kutaisi",
+        "coordinates": [
+            42.7,
+            42.25
+        ],
+        "annotation": [12, -8, 24],
+        "link": "georgia#kutaisi"
+    },
+    {
+        "name": "Batumi",
+        "coordinates": [
+            41.6367,
+            41.6168
+        ],
+        "annotation": [30, 16, 27],
+        "link": "georgia#batumi"
+    },
+    {
+        "name": "Tbilisi",
+        "coordinates": [
+            44.8271,
+            41.7151
+        ],
+        "annotation": [22, 3, 20],
+        "link": "georgia#tbilisi"
+    }
+]

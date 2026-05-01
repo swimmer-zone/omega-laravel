@@ -14,4 +14,9 @@ class TravelController extends Controller
             ->where('is_published', true)
             ->get();
     }
+
+    public function show($slug)
+    {
+        return Travel::where('slug', $slug)->firstOrFail();
+    }
 }

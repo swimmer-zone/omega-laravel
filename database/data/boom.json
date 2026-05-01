@@ -1,0 +1,64 @@
+[
+    {
+        "name": "San Sebastian",
+        "coordinates": [
+            -1.9812,
+            43.3183
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "boom"
+    },
+    {
+        "name": "Idanha-a-Nova",
+        "coordinates": [
+            -7.2408,
+            39.9317
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "boom"
+    },
+    {
+        "name": "Porto",
+        "coordinates": [
+            -8.611,
+            41.1496
+        ],
+        "annotation": [-60, -30, -4]
+    },
+    {
+        "name": "Guimaraes",
+        "coordinates": [
+            -8.2962,
+            41.4446
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "boom"
+    },
+    {
+        "name": "Madrid",
+        "coordinates": [
+            -3.7038,
+            40.4168
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "boom"
+    },
+    {
+        "name": "Andorra",
+        "coordinates": [
+            1.5211,
+            42.5078
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "boom"
+    },
+    {
+        "name": "Maggia",
+        "coordinates": [
+            8.7167,
+            46.2333
+        ],
+        "annotation": [-60, -30, -4],
+        "link": "boom"
+    }
+]

@@ -32,7 +32,7 @@ class TravelResource extends Resource
     protected static ?string $modelLabel = 'Blog';
     protected static ?string $pluralModelLabel = 'Blogs';
 
-    protected static string | BackedEnum | null $navigationIcon = Heroicon::GlobeEuropeAfrica;
+    protected static string | BackedEnum | null $navigationIcon = Heroicon::Newspaper;
     protected static string | UnitEnum | null $navigationGroup = 'Travels';
 
     public static function form(Schema $schema): Schema
@@ -47,13 +47,14 @@ class TravelResource extends Resource
                         $set('slug', Str::slug($state));
                     }),
 
-                TextInput::make('subtitle')
-                    ->maxLength(255),
-
                 TextInput::make('slug')
                     ->required()
                     ->unique(ignoreRecord: true)
                     ->maxLength(255),
+
+                TextInput::make('subtitle')
+                    ->maxLength(255)
+                    ->columnSpanFull(),
 
                 MarkdownEditor::make('body')
                     ->required()
