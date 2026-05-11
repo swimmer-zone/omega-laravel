@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Filament\Resources\Travels\Tables;
+namespace App\Filament\Resources\Blogs\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Table;
 
-class TravelsTable
+class BlogsTable
 {
     public static function configure(Table $table): Table
     {

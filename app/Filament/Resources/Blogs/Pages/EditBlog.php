@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\Travels\Pages;
+namespace App\Filament\Resources\Blogs\Pages;
 
-use App\Filament\Resources\Travels\TravelResource;
+use App\Filament\Resources\Blogs\BlogResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditTravel extends EditRecord
+class EditBlog extends EditRecord
 {
-    protected static string $resource = TravelResource::class;
+    protected static string $resource = BlogResource::class;
 
     protected function getHeaderActions(): array
     {

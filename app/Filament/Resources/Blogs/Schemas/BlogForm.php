@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources\Travels\Schemas;
+namespace App\Filament\Resources\Blogs\Schemas;
 
 use Filament\Schemas\Schema;
 
-class TravelForm
+class BlogForm
 {
     public static function configure(Schema $schema): Schema
     {

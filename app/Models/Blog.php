@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Travel extends Model
+class Blog extends Model
 {
-    protected $table = 'travels';
-
     protected $fillable = [
+        'blog_type',
         'title',
         'subtitle',
         'slug',
         'body',
+        'panorama',
         'is_published',
         'published_at',
     ];
