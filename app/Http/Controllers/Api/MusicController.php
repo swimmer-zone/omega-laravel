@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Section;
 use App\Models\Track;
 use Illuminate\Http\Request;
 
@@ -10,7 +11,11 @@ class MusicController extends Controller
 {
     public function index()
     {
-        return Track::query()
+        return Section::query()
+            ->with(['tracks' => function ($query) {
+                $query->orderBy('track_number');
+            }])
+            ->orderBy('id')
             ->get();
     }
 

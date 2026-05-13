@@ -50,6 +50,9 @@ class VisitedCityResource extends Resource
                 ->default(0)
                 ->maxLength(255),
 
+            TextInput::make('link')
+                ->maxLength(255),
+
             Repeater::make('values')
                 ->schema([
                     TextInput::make('value')
@@ -85,6 +88,8 @@ class VisitedCityResource extends Resource
                 TextColumn::make('latitude'),
 
                 TextColumn::make('longitude'),
+
+                TextColumn::make('link'),
             ])
             ->defaultSort('name')
             ->actions([

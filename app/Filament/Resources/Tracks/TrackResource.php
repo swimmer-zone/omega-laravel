@@ -119,6 +119,9 @@ class TrackResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('track_number')
+                    ->label('#'),
+
                 TextColumn::make('title')
                     ->searchable(),
 
@@ -129,6 +132,8 @@ class TrackResource extends Resource
                     ->formatStateUsing(fn ($state) => gmdate('i:s', $state)),
 
                 TextColumn::make('bpm'),
+
+                TextColumn::make('plays'),
             ])
             ->defaultSort('id')
             ->actions([

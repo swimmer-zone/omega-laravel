@@ -5,11 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Drivers\Gd\Driver;
+use Intervention\Image\ImageManager;
 
 class Gallery extends Model
 {
     protected $fillable = [
-        'travel_id',
+        'blog_id',
         'title',
         'slug',
         'description',
@@ -31,14 +34,9 @@ class Gallery extends Model
         });
     }
 
-    public function travel(): BelongsTo
+    public function blog(): BelongsTo
     {
-        return $this->belongsTo(Travel::class);
-    }
-
-    public function images(): HasMany
-    {
-        return $this->hasMany(Image::class)->orderBy('sort_order');
+        return $this->belongsTo(Blog::class);
     }
 
     public function resizeImages(): void

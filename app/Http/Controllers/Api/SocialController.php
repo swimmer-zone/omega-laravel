@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\Bookmark;
+use App\Models\Social;
 use Illuminate\Http\Request;
 
-class BookmarkController extends Controller
+class SocialController extends Controller
 {
     public function index()
     {
-        return Bookmark::query()
+        return Social::query()
             ->get();
     }
 }

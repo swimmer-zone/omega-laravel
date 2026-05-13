@@ -5,7 +5,7 @@ namespace App\Models;
 use getID3;
 use getid3_lib;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Storage;
 use Str;
 
@@ -29,6 +29,10 @@ class Track extends Model
     ];
 
     protected $appends = ['url'];
+
+    protected $casts = [
+        'plays' => 'integer',
+    ];
 
     public function section()
     {

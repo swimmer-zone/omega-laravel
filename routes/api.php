@@ -22,15 +22,12 @@ Route::get('/travels/{slug}', [BlogController::class, 'travel']);
 // Resume
 
 // Travels
-Route::get('/cities', [VisitedCityController::class, 'index']);
+Route::get('/cities', [VisitedCityController::class, 'index']); // @todo
 Route::get('/countries', [VisitedCountryController::class, 'index']);
 
 // Whisky
 Route::get('/whisky', [WhiskyController::class, 'index']);
 Route::get('/distilleries', [DistilleryController::class, 'index']); // @todo
-
-// Bookmarks
-Route::get('/bookmarks', [BookmarkController::class, 'index']); // @todo
 
 Route::get('/diy', [BlogController::class, 'diy']);
 Route::get('/diy/{slug}', [BlogController::class, 'diyShow']);

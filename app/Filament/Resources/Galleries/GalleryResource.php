@@ -21,6 +21,7 @@ use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
 use Str;
 use UnitEnum;
 
@@ -32,13 +33,13 @@ class GalleryResource extends Resource
     protected static ?string $pluralModelLabel = 'Galleries';
 
     protected static string | BackedEnum | null $navigationIcon = Heroicon::Photo;
-    protected static string | UnitEnum | null $navigationGroup = 'Travels';
+    protected static string | UnitEnum | null $navigationGroup = 'Blogs';
 
     public static function form(Schema $schema): Schema
     {
         return $schema->components([
-            Select::make('travel_id')
-                ->relationship('travel', 'title')
+            Select::make('blog_id')
+                ->relationship('blog', 'title')
                 ->getOptionLabelFromRecordUsing(
                     fn ($record) => $record->title
                 )
@@ -79,8 +80,8 @@ class GalleryResource extends Resource
                 TextColumn::make('title')
                     ->searchable(),
 
-                TextColumn::make('travel.title')
-                    ->label('Travel')
+                TextColumn::make('blog.title')
+                    ->label('Blog')
                     ->searchable(),
 
                 TextColumn::make('slug')
@@ -90,7 +91,7 @@ class GalleryResource extends Resource
                     ->label('Images')
                     ->state(fn (Gallery $record) => count($record->images ?? [])),
             ])
-            ->filters([BaseFilter::make('travel.title')])
+            ->filters([BaseFilter::make('blog.title')])
             ->defaultSort('id')
             ->actions([
                 EditAction::make(),
