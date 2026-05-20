@@ -6,6 +6,7 @@ on:
 
 jobs:
   deploy:
+    environment: Strato
     runs-on: ubuntu-latest
 
     steps:
