@@ -15,13 +15,16 @@ use App\Http\Controllers\Api\WhiskyController;
 
 // Home
 Route::get('/home', [HomeController::class, 'index']);
+Route::get('/social', [SocialController::class, 'index']);
+
 Route::get('/music', [MusicController::class, 'index']);
-Route::get('/travels', [BlogController::class, 'travels']);
-Route::get('/travels/{slug}', [BlogController::class, 'travel']);
+Route::post('/tracks/{track}/play', [TrackPlayController::class, 'store']);
 
 // Resume
 
 // Travels
+Route::get('/travels', [BlogController::class, 'travels']);
+Route::get('/travels/{slug}', [BlogController::class, 'travel']);
 Route::get('/cities', [VisitedCityController::class, 'index']); // @todo
 Route::get('/countries', [VisitedCountryController::class, 'index']);
 
@@ -29,13 +32,13 @@ Route::get('/countries', [VisitedCountryController::class, 'index']);
 Route::get('/whisky', [WhiskyController::class, 'index']);
 Route::get('/distilleries', [DistilleryController::class, 'index']); // @todo
 
+// DIY
 Route::get('/diy', [BlogController::class, 'diy']);
 Route::get('/diy/{slug}', [BlogController::class, 'diyShow']);
 
+// Archive
 Route::get('/tutorials', [BlogController::class, 'tutorials']);
 Route::get('/tutorials/{slug}', [BlogController::class, 'tutorialShow']);
 
 Route::get('/archive', [BlogController::class, 'archive']);
 Route::get('/archive/{slug}', [BlogController::class, 'archiveShow']);
-
-Route::post('/tracks/{track}/play', [TrackPlayController::class, 'store']);
