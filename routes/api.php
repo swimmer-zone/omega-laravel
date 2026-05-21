@@ -18,7 +18,8 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/social', [SocialController::class, 'index']);
 
 Route::get('/music', [MusicController::class, 'index']);
-Route::post('/tracks/{track}/play', [TrackPlayController::class, 'store']);
+Route::post('/tracks/{track}/play/start', [TrackPlayController::class, 'start']);
+Route::patch('/track-plays/{trackPlay}', [TrackPlayController::class, 'update']);
 
 // Resume
 

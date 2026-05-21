@@ -34,6 +34,11 @@ class Track extends Model
         'plays' => 'integer',
     ];
 
+    public function plays()
+    {
+        return $this->hasMany(TrackPlay::class);
+    }
+
     public function section()
     {
         return $this->belongsTo(Section::class);
