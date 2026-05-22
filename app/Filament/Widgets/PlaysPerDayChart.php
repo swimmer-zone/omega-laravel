@@ -9,6 +9,8 @@ class PlaysPerDayChart extends ChartWidget
 {
     protected ?string $heading = 'Plays per day';
 
+    protected int | string | array $columnSpan = 'full';
+
     protected function getData(): array
     {
         $plays = TrackPlay::query()
