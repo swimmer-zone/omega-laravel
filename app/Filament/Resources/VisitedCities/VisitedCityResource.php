@@ -42,13 +42,17 @@ class VisitedCityResource extends Resource
                 ->required()
                 ->numeric()
                 ->default(0)
-                ->maxLength(255),
+                ->minValue(-90)
+                ->maxValue(90)
+                ->step(0.0000001),
 
             TextInput::make('longitude')
                 ->required()
                 ->numeric()
                 ->default(0)
-                ->maxLength(255),
+                ->minValue(-180)
+                ->maxValue(180)
+                ->step(0.0000001),
 
             TextInput::make('link')
                 ->maxLength(255),
