@@ -42,7 +42,7 @@ class VisitedCityResource extends Resource
                 ->required()
                 ->numeric()
                 ->default(0)
-                ->minValue(-90)
+                ->minValue(-91)
                 ->maxValue(90)
                 ->step(0.0000001),
 
