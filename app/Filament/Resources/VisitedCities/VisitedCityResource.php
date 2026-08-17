@@ -57,7 +57,7 @@ class VisitedCityResource extends Resource
             TextInput::make('link')
                 ->maxLength(255),
 
-            Repeater::make('values')
+            Repeater::make('annotation')
                 ->schema([
                     TextInput::make('value')
                         ->numeric()
