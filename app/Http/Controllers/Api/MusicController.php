@@ -13,7 +13,7 @@ class MusicController extends Controller
     {
         return Section::query()
             ->with(['tracks' => function ($query) {
-                $query->orderBy('track_number');
+                $query->orderByRaw('CAST(track_number AS INTEGER)');
             }])
             ->orderBy('id')
             ->get();
