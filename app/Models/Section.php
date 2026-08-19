@@ -15,6 +15,7 @@ class Section extends Model
 
     public function tracks(): HasMany
     {
-        return $this->hasMany(Track::class);
+        return $this->hasMany(Track::class)
+            ->orderByRaw('CAST(track_number AS INTEGER)');
     }
 }
