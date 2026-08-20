@@ -120,7 +120,12 @@ class TrackResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('track_number')
-                    ->label('#'),
+                    ->label('#')
+                    ->sortable(query: function ($query, string $direction) {
+                        $query->orderByRaw(
+                            "CAST(track_number AS INTEGER) {$direction}"
+                        );
+                    }),
 
                 TextColumn::make('title')
                     ->searchable(),
@@ -135,7 +140,7 @@ class TrackResource extends Resource
 
                 TextColumn::make('plays'),
             ])
-            ->defaultSort('id')
+            ->defaultSort('track_number')
             ->actions([
                 EditAction::make(),
                 DeleteAction::make(),
