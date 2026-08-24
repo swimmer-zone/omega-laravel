@@ -12,6 +12,7 @@ use App\Http\Controllers\Api\TrackPlayController;
 use App\Http\Controllers\Api\VisitedCityController;
 use App\Http\Controllers\Api\VisitedCountryController;
 use App\Http\Controllers\Api\WhiskyController;
+use App\Http\Controllers\ContactController;
 
 // Home
 Route::get('/home', [HomeController::class, 'index']);
@@ -43,3 +44,8 @@ Route::get('/tutorials/{slug}', [BlogController::class, 'tutorialShow']);
 
 Route::get('/archive', [BlogController::class, 'archive']);
 Route::get('/archive/{slug}', [BlogController::class, 'archiveShow']);
+
+// routes/api.php
+
+
+Route::post('/contact', [ContactController::class, 'store']);
