@@ -16,6 +16,7 @@ class ContactController extends Controller
             'name' => ['required', 'string', 'max:100'],
             'email' => ['required', 'email', 'max:255'],
             'message' => ['required', 'string', 'max:5000'],
+            'website' => ['nullable', 'string', 'max:255'],
         ]);
 
         $contactEmail = config('mail.contact_address');
