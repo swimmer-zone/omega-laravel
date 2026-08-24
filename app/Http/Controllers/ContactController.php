@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactMessage;
 use App\Mail\ContactConfirmation;
+use App\Mail\ContactMessage;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -19,13 +19,35 @@ class ContactController extends Controller
             'website' => ['nullable', 'string', 'max:255'],
         ]);
 
+        /*
+         * Honeypot.
+         *
+         * If a bot filled in the hidden website field, pretend
+         * everything worked without actually sending anything.
+         */
+        if (!empty($validated['website'])) {
+            return response()->json([
+                'message' => 'Your message has been sent.',
+            ]);
+        }
+
         $contactEmail = config('mail.contact_address');
 
-        // Send the message to you.
+        if (!$contactEmail) {
+            throw new \RuntimeException(
+                'CONTACT_EMAIL is not configured.'
+            );
+        }
+
+        /*
+         * Send the message to you.
+         */
         Mail::to($contactEmail)
             ->send(new ContactMessage($validated));
 
-        // Send a confirmation to the person who contacted you.
+        /*
+         * Send a confirmation to the person who contacted you.
+         */
         Mail::to($validated['email'])
             ->send(new ContactConfirmation($validated));
 
