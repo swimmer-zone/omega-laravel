@@ -59,6 +59,8 @@ class BlogController extends Controller
                     ->map(fn ($path) => Storage::disk('public')->url($path))
                     ->values(),
             ]),
+            'created_at' => $blog->created_at,
+            'updated_at' => $blog->updated_at,
         ]);
     }
 
